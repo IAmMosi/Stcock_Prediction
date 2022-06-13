@@ -2,10 +2,10 @@
 
 Hi guys! <br />
 This is my code for [Stock Prediction Challenge](https://www.hackerrank.com/challenges/stockprediction/problem). In this code I have tried to implement appropriate and clear code to be easy to read. The main problem is completely explained in [hakcerrank](https://www.hackerrank.com/challenges/stockprediction/problem), and I dont write excessive explanation hear. So, let's go to the code and solution. <br />
-In my code, there are some functions and some statistical formula, and I will explain all of them. After that, I will explain my logic in code.Firstly, I explain some statistical subjects. <br />
+In my code, there are some functions and some statistical concepts, and I will explain all of them. After that, I will explain my logic in code.Firstly, I explain some statistical concepts. <br />
 
 # Some Statistics
-I have used some statistical formulas to have more accurate prediction and BUY and SELL more reliable. <br />
+I have used some statistical concepts to have more accurate prediction and BUY and SELL more reliable. <br />
 1. SMA (Simple Moving Avreage): <br />
 It calculates the average of a selected range of prices by the number of periods in that range. The average is called "moving" because it is plotted on the chart bar by bar, forming a line that moves along the chart as the average value changes. You can find its formula [hear](https://www.investopedia.com/terms/s/sma.asp#:~:text=A%20simple%20moving%20average%20(SMA)%20calculates%20the%20average%20of%20a,of%20periods%20in%20that%20range).
 2. EMA (Exponential Moving Avreage): <br />
@@ -40,6 +40,6 @@ This is the main and most important funtion of code. In this function, I impelem
 In this function, I do my transactions (buy and sell orders) and make output.<br />
 
 # Logic and Strategy
-In this challenge, we have price of stocks for today and last 4 days. So, I cannot use historical data to learn any model. Therefore, I use some statistical metrics to build my strategy. Because I do not have OHLC (open, high, low, close) prices and I just have one price  for each stock for each day, I cannot use much statistical metrics and financial indicators. I use SMA, EMA and RSI to build my strategy and make a profit. I implement a tree like model. The first root of tree is RSI, and it branches tree to two branches. After that, in one branch, EMA branches tree to two branches and in another branch, SMA branches tree to two branches. Finally, there are four leaves for decision-making. In two of them, I decide to buy and in other leaves, I decide to sell. In the end, I set orders for stocks that are qualified for buy or sell.
+In this challenge, we have price of stocks for today and last 4 days. Therefore, I use some statistical metrics to build my strategy. Because I do not have OHLC (open, high, low, close) prices and I just have one price for each stock for each day, and I cannot use much statistical metrics and financial indicators. I use SMA, EMA and RSI to build my strategy and make a profit. I implement a tree like model. The first root of tree is RSI, and it branches tree to two branches. After that, in one branch, EMA branches tree to two branches and in another branch, SMA branches tree to two branches. Finally, there are four leaves for decision-making. In two of them, I decide to buy and in other leaves, I decide to sell. In the end, I set orders for stocks that are qualified for buy or sell.
 # Running Code
 For running this code, please go [hear](https://www.hackerrank.com/challenges/stockprediction/problem) and copy code in editor, then run!
