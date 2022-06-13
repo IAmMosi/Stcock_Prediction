@@ -25,5 +25,12 @@ This function turns the input file to string.<br />
 5. def process_input():<br />
 This function processes input string and spits it to lists of stock names, prices, owned stocks ana ... . <br />
 6. def update_data():<br />
-After each iteration, This function updates the lists of data.
-
+After each iteration, This function updates the lists of data.<br />
+7. def calculate_ema():<br />
+In this functoin, I calculate the EMA of each stock.<br />
+8. def calculate_rsi():<br />
+In this function, I calculate each stock RSI indicator.<br />
+9. def calculate_ema_var(data):<br />
+In this function, I calculated variance of EMA for each stock.<br />
+10. def make_decision(data):<br />
+This is the main and most important funtion of code. In this function, I impelemente my stratagy to buy and sell stocks and make profit!
