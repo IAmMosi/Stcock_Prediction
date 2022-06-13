@@ -41,3 +41,5 @@ In this function, I do my transactions (buy and sell orders) and make output.<br
 
 # Logic and Strategy
 In this challenge, we have price of stocks for today and last 4 days. So, I cannot use historical data to learn any model. Therefore, I use some statistical metrics to build my strategy. Because I do not have OHLC (open, high, low, close) prices and I just have one price  for each stock for each day, I cannot use much statistical metrics and financial indicators. I use SMA, EMA and RSI to build my strategy and make a profit. I implement a tree like model. The first root of tree is RSI, and it branches tree to two branches. After that, in one branch, EMA branches tree to two branches and in another branch, SMA branches tree to two branches. Finally, there are four leaves for decision-making. In two of them, I decide to buy and in other leaves, I decide to sell. In the end, I set orders for stocks that are qualified for buy or sell.
+# Running Code
+For running this code, please go [hear](https://www.hackerrank.com/challenges/stockprediction/problem) and copy code in editor, then run!
