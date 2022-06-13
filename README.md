@@ -3,6 +3,7 @@
 Hi guys! <br />
 This is my code for [Stock Prediction Challenge](https://www.hackerrank.com/challenges/stockprediction/problem). In this code I have tried to implement approprite and clear code to be easy to read. The main problem is compeletly explained in [hakcerrank](https://www.hackerrank.com/challenges/stockprediction/problem) and I dont write execive explanation hear. So, let's go to the code and solution. <br />
 In my code, there are some functions and some statistical formula and I will explain all of them. After that, I will explaine my logic in code. firstly, I explaine some statistical subjects. <br />
+
 # Some Statistics
 I have used some statistical formulas to have more accurate prediction and BUY and SELL more reliable. <br />
 1. SMA (Simple Moving Avreage): <br />
@@ -12,6 +13,7 @@ Exponential Moving Average (EMA) is similar to Simple Moving Average (SMA), meas
 3. RSI (Relative Strength Index): <br />
 The Relative Strength Index (RSI), developed by J. Welles Wilder, is a momentum oscillator that measures the speed and change of price movements. The RSI oscillates between zero and 100. Traditionally the RSI is considered overbought when above 70 and oversold when below 30. You can find its formula [hear](https://www.investopedia.com/terms/r/rsi.asp).<br />
 Now, I am going to explaine the functions i have wrote in my code.
+
 # Functions
 I have wrote functions in my code to solve the problem. Now, take a look on them: <br />
 1. def load(): <br />
@@ -23,7 +25,7 @@ This functoin reads file that is loaded from website.<br />
 4. def read_input():<br />
 This function turns the input file to string.<br />
 5. def process_input():<br />
-This function processes input string and spits it to lists of stock names, prices, owned stocks ana ... . <br />
+This function processes input string and spits it to lists of stock names, prices, owned stocks and ... . <br />
 6. def update_data():<br />
 After each iteration, This function updates the lists of data.<br />
 7. def calculate_ema():<br />
@@ -33,8 +35,9 @@ In this function, I calculate each stock RSI indicator.<br />
 9. def calculate_ema_var(data):<br />
 In this function, I calculated variance of EMA for each stock.<br />
 10. def make_decision(data):<br />
-This is the main and most important funtion of code. In this function, I impelemente my stratagy to buy and sell stocks and make profit!<br />
+This is the main and most important funtion of code. In this function, I impelemente my strategy to buy and sell stocks and make profit!<br />
 11. def do_transactions():<br />
-In this function, I do my transactions (buy and sell orders) and make output.
+In this function, I do my transactions (buy and sell orders) and make output.<br />
 
-
+# Logic and Strategy
+In this challenge, we have price of stocks for today and last 4 days. So, I cannot use historical data to learn any model. therefore, I use some statistical metrics to build my strategy. Becuase I do not have OHLC (open, high, low, close) prices and I just have one price for each stock for each day, I cannot use many statistical metrics and financial indicators. I use SMA, EMA and RSI to build my strategy and make profit. I implement 
