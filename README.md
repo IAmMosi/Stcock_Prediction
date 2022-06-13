@@ -33,4 +33,8 @@ In this function, I calculate each stock RSI indicator.<br />
 9. def calculate_ema_var(data):<br />
 In this function, I calculated variance of EMA for each stock.<br />
 10. def make_decision(data):<br />
-This is the main and most important funtion of code. In this function, I impelemente my stratagy to buy and sell stocks and make profit!
+This is the main and most important funtion of code. In this function, I impelemente my stratagy to buy and sell stocks and make profit!<br />
+11. def do_transactions():<br />
+In this function, I do my transactions (buy and sell orders) and make output.
+
+
