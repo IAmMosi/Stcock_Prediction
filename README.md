@@ -1,4 +1,4 @@
-# Stcock_Prediction
+# Stcock Prediction
 
 Hi guys! <br />
 This is my code for [Stock Prediction Challenge](https://www.hackerrank.com/challenges/stockprediction/problem). In this code I have tried to implement approprite and clear code to be easy to read. The main problem is compeletly explained in [hakcerrank](https://www.hackerrank.com/challenges/stockprediction/problem) and I dont write execive explanation hear. So, let's go to the code and solution. <br />
@@ -11,3 +11,5 @@ It calculates the average of a selected range of prices by the number of periods
 Exponential Moving Average (EMA) is similar to Simple Moving Average (SMA), measuring trend direction over a period of time. However, whereas SMA simply calculates an average of price data, EMA applies more weight to data that is more current. Because of its unique calculation, EMA will follow prices more closely than a corresponding SMA. You can find its formula [hear](https://www.investopedia.com/ask/answers/122314/what-exponential-moving-average-ema-formula-and-how-ema-calculated.asp#:~:text=The%20exponential%20moving%20average%20(EMA)%20is%20a%20technical%20chart%20indicator,importance%20to%20recent%20price%20data).
 3. RSI (Relative Strength Index): <br />
 The Relative Strength Index (RSI), developed by J. Welles Wilder, is a momentum oscillator that measures the speed and change of price movements. The RSI oscillates between zero and 100. Traditionally the RSI is considered overbought when above 70 and oversold when below 30. You can find its formula [hear](https://www.investopedia.com/terms/r/rsi.asp).
+Now, I am going to explaine the functions i have wrote in my code.
+# Functions
